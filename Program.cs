@@ -18,11 +18,17 @@ namespace Lab_2
                 Console.Write("Enter Width: ");
                 var width = float.Parse(Console.ReadLine());
 
+                Console.Write("Enter Height: ");
+                var height = float.Parse(Console.ReadLine());
+
                 var area = (length * width);
                 Console.WriteLine("Area: " + area);
 
                 var perimeter = (length * 2) + (width * 2);
                 Console.WriteLine("Perimeter: " + perimeter);
+
+                var volume = (length * width * height);
+                Console.WriteLine("Volume: " + volume);
 
                 Console.WriteLine("Continue? y/n");
                 response = Console.ReadLine();
